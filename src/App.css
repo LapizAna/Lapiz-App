@@ -1,0 +1,87 @@
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #488282;
+}
+
+.table-container {
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  height: 400px; /* Fixed height for table container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+table {
+  width: 800px;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures consistent column widths */
+}
+
+thead {
+  background-color: #8ac294;
+  color: rgb(25, 24, 24);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+td button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+td button:focus {
+  outline: none;
+}
+
+td button:hover {
+  background-color: #8ac294;
+}
+
+td button[style*="background-color: green"] {
+  background-color: #8ac294;
+}
+
+td button[style*="background-color: gray"] {
+  background-color: #8ac294;
+}
+
+.search-container {
+  width: 0px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input {
+  right: 302px;
+  position: relative;
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.h1 {
+  justify-content: center;
+}
